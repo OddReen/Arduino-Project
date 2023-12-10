@@ -51,7 +51,7 @@ public class CarController : MonoBehaviour
     }
     void Move()
     {
-        rb.velocity = (frontLeftWheel.forward * _myListener.buttonRead * Time.deltaTime * speed);
+        rb.velocity = frontLeftWheel.forward * _myListener.buttonRead * Time.deltaTime * speed;
     }
     private void OnDrawGizmos()
     {
